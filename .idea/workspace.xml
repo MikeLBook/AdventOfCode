@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day01.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day01Sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day01Final.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,9 +53,16 @@
       <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\Days" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day01AlternateKt">
+  <component name="RunManager" selected="Kotlin.Day01FinalKt">
     <configuration name="Day01AlternateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day01AlternateKt" />
+      <module name="AdventOfCode.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day01FinalKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day01FinalKt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,8 +84,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Day01AlternateKt" />
+        <item itemvalue="Kotlin.Day01FinalKt" />
         <item itemvalue="Kotlin.Day01Kt" />
+        <item itemvalue="Kotlin.Day01AlternateKt" />
         <item itemvalue="Kotlin.OneKt" />
       </list>
     </recent_temporary>
