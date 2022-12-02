@@ -22,18 +22,18 @@ fun main() {
     part2()
 }
 
-fun day01Alternate(): List<Int> {
-    val calorieList = File("src/main/kotlin/day01.txt").readLines()
-    val subListIndices = calorieList.mapIndexedNotNull { index, line ->
-        when {
-            index == 0 -> -1 // first item of the first window coming up
-            line.isEmpty() -> index // a proper index of an empty string
-            index == calorieList.size - 1 -> calorieList.size // last item of the last window
-            else -> null
-        }
-    }
-    return subListIndices.windowed(2, 1) { window ->
-        calorieList.subList(window.first() + 1, window.last())
-            .map { it.toInt() }.reduce { total, nextValue -> total + nextValue }
-    }
-}
+//fun day01Alternate(): List<Int> {
+//    val calorieList = File("src/main/kotlin/day01.txt").readLines()
+//    val subListIndices = calorieList.mapIndexedNotNull { index, line ->
+//        when {
+//            index == 0 -> -1 // first item of the first window coming up
+//            line.isEmpty() -> index // a proper index of an empty string
+//            index == calorieList.size - 1 -> calorieList.size // last item of the last window
+//            else -> null
+//        }
+//    }
+//    return subListIndices.windowed(2, 1) { window ->
+//        calorieList.subList(window.first() + 1, window.last())
+//            .map { it.toInt() }.reduce { total, nextValue -> total + nextValue }
+//    }
+//}
