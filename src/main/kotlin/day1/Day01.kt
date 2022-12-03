@@ -1,8 +1,11 @@
+package day1
+
+import total
 import java.io.File
 
 fun main() {
     fun day01(): List<Int> { // returns a list of total calories per elf
-        val calorieList = File("src/main/kotlin/day01.txt").readLines()
+        val calorieList = File("src/main/kotlin/day1/day01.txt").readLines()
         val emptyStringIndices = calorieList.mapIndexedNotNull { index, line -> if (line.isEmpty()) index else null }
         return emptyStringIndices.mapIndexed { index, emptyStringIndex ->
             val fromIndex = if (index == 0) 0 else emptyStringIndices[index - 1] + 1

@@ -67,28 +67,28 @@
       </method>
     </configuration>
     <configuration name="Day01Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day01Kt" />
+      <option name="MAIN_CLASS_NAME" value="day1.Day01Kt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Day02AlternateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day02AlternateKt" />
+      <option name="MAIN_CLASS_NAME" value="day2.Day02AlternateKt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Day02Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day02Kt" />
+      <option name="MAIN_CLASS_NAME" value="day2.Day02Kt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Day03Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day03Kt" />
+      <option name="MAIN_CLASS_NAME" value="day3.Day03Kt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,9 +97,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.Day03Kt" />
+        <item itemvalue="Kotlin.Day01Kt" />
         <item itemvalue="Kotlin.Day02AlternateKt" />
         <item itemvalue="Kotlin.Day02Kt" />
-        <item itemvalue="Kotlin.Day01Kt" />
         <item itemvalue="Kotlin.Day01FinalKt" />
       </list>
     </recent_temporary>

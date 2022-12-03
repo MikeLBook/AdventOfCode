@@ -1,3 +1,7 @@
+package day3
+
+import splitCorrectly
+import total
 import java.io.File
 
 val itemTypes = arrayOf(
@@ -7,7 +11,7 @@ val itemTypes = arrayOf(
 )
 
 fun main() {
-    val rucksacks = File("src/main/kotlin/day03.txt").readLines()
+    val rucksacks = File("src/main/kotlin/day3/day03.txt").readLines()
 
     fun part1(): Int {
        return rucksacks.map {

@@ -1,6 +1,9 @@
+package day2
+
+import total
 import java.io.File
 fun main() {
-    val lines = File("src/main/kotlin/day02.txt").readLines()
+    val lines = File("src/main/kotlin/day2/day02.txt").readLines()
 
     fun formatPartOnePairs(): List<Pair<String, String>> {
         val legend = mapOf(
