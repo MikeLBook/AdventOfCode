@@ -58,7 +58,7 @@ fun main() {
                 points[round.second]?.plus(it)
             } ?: throw Exception("Invalid Pair")
         }
-        return rounds.map { computeScore(it) }.reduce { total, score -> total + score }
+        return rounds.map { computeScore(it) }.total()
     }
 
     println("Day 02 part 1 solution: ${computeAllScores(formatPartOnePairs())}")

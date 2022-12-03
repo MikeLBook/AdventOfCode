@@ -114,7 +114,7 @@ fun main() {
                     Outcome.DRAW -> Outcome.DRAW.points + Symbol.values().first { elfMove == it }.points
                 }
             }
-        }.reduce { total, value -> total + value }
+        }.total()
     }
 
     println("Day 02 part 1 solution: ${calculate(Part.ONE)}")
