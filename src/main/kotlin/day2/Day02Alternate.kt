@@ -1,6 +1,5 @@
 package day2
 
-import total
 import java.io.File
 
 /*
@@ -82,7 +81,7 @@ fun main() {
     val lines = File("src/main/kotlin/day2/day02.txt").readLines()
     // takes either day2.Part.ONE or day2.Part.TWO as an argument - safer to accept a day2.Part than a String
     fun calculate(part: Part): Int {
-        return lines.map { line ->
+        return lines.sumOf { line ->
             // split an individual line in the file to a Pair
             val pair = line.split(" ").zipWithNext().first()
             // if pair.first == "A", then elfMove == day2.Symbol.A
@@ -104,20 +103,21 @@ fun main() {
                 }
             } else {
                 // unlike the above when statement, we pass legend.part2 into this when statement as an argument
-                when(legend.part2) {
+                when (legend.part2) {
                     // as such, the left side of the arrows is implicitly checking if legend.part2 == day2.Outcome.WIN etc.
                     // on the right side of the arrows, we know we SHOULD win lose or draw, but we need to determine which day2.Symbol to play
                     // day2.Symbol.values() gives a list of all Symbols e.g. [A, B, C]
                     // List.first() is a shorthand for filtering a List and then grabbing the first element of the resulting List
                     // This line says give me the day2.Symbol that is not the one that elfMove.beats and is not the elfMove itself
-                    Outcome.WIN -> Outcome.WIN.points + Symbol.values().first { elfMove.beats != it && elfMove != it }.points
+                    Outcome.WIN -> Outcome.WIN.points + Symbol.values()
+                        .first { elfMove.beats != it && elfMove != it }.points
                     // Here, give me the day2.Symbol that the elfMove.beats
                     Outcome.LOSE -> Outcome.LOSE.points + Symbol.values().first { elfMove.beats == it }.points
                     // Here, give me the day2.Symbol that is the same as the elfMove
                     Outcome.DRAW -> Outcome.DRAW.points + Symbol.values().first { elfMove == it }.points
                 }
             }
-        }.total()
+        }
     }
 
     println("Day 02 part 1 solution: ${calculate(Part.ONE)}")

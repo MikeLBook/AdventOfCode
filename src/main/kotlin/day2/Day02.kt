@@ -1,6 +1,5 @@
 package day2
 
-import total
 import java.io.File
 fun main() {
     val lines = File("src/main/kotlin/day2/day02.txt").readLines()
@@ -61,7 +60,7 @@ fun main() {
                 points[round.second]?.plus(it)
             } ?: throw Exception("Invalid Pair")
         }
-        return rounds.map { computeScore(it) }.total()
+        return rounds.sumOf { computeScore(it) }
     }
 
     println("Day 02 part 1 solution: ${computeAllScores(formatPartOnePairs())}")

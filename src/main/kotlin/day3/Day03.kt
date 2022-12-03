@@ -1,7 +1,6 @@
 package day3
 
 import splitCorrectly
-import total
 import java.io.File
 
 val itemTypes = arrayOf(
@@ -14,13 +13,13 @@ fun main() {
     val rucksacks = File("src/main/kotlin/day3/day03.txt").readLines()
 
     fun part1(): Int {
-       return rucksacks.map {
+       return rucksacks.sumOf {
            val rucksackItems = it.splitCorrectly()
            val firstCompartment = rucksackItems.subList(0, it.length / 2)
            val secondCompartment = rucksackItems.subList(it.length / 2, it.length)
            val intersection = firstCompartment.intersect(secondCompartment.toSet()).first()
            itemTypes.indexOf(intersection) + 1
-       }.total()
+       }
     }
 
     fun part2(): Int {
@@ -30,7 +29,7 @@ fun main() {
                 .intersect(it[2].splitCorrectly().toSet())
                 .first()
             itemTypes.indexOf(intersection) + 1
-        }.total()
+        }.sum()
     }
 
     println("Day 03 part 1 solution: ${part1()}")

@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Day03.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day03.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day03Sample.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day01.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day01.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day02.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day02Alternate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day02Alternate.kt" afterDir="false" />
-    </list>
+    <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +46,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\day3" />
+      <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\day2" />
+      <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\day1" />
       <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\Days" />
     </key>
   </component>
@@ -97,9 +91,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.Day03Kt" />
-        <item itemvalue="Kotlin.Day01Kt" />
         <item itemvalue="Kotlin.Day02AlternateKt" />
         <item itemvalue="Kotlin.Day02Kt" />
+        <item itemvalue="Kotlin.Day01Kt" />
         <item itemvalue="Kotlin.Day01FinalKt" />
       </list>
     </recent_temporary>
