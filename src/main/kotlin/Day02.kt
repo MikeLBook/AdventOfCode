@@ -11,7 +11,7 @@ fun main() {
             "Y" to "Paper",
             "Z" to "Scissors"
         )
-        return lines.map {it.split(" ").map { key -> legend[key]!! }.zipWithNext()[0]}
+        return lines.map {it.split(" ").map { key -> legend[key]!! }.zipWithNext().first()}
     }
 
     fun formatPartTwoPairs(): List<Pair<String, String>> {
@@ -29,7 +29,7 @@ fun main() {
                 else -> throw Exception("Invalid Pair")
             }
         }
-        return lines.map { it.split(" ").zipWithNext()[0].playStrategy() }
+        return lines.map { it.split(" ").zipWithNext().first().playStrategy() }
     }
 
     fun computeAllScores(rounds: List<Pair<String, String>>): Int {
