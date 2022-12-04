@@ -14,7 +14,7 @@ fun main() {
 
     fun part1(): Int {
        return rucksacks.sumOf {
-           val rucksackItems = it.splitCorrectly()
+           val rucksackItems = it.splitCorrectly("")
            val firstCompartment = rucksackItems.subList(0, it.length / 2)
            val secondCompartment = rucksackItems.subList(it.length / 2, it.length)
            firstCompartment.intersect(secondCompartment.toSet())
@@ -26,9 +26,9 @@ fun main() {
 
     fun part2(): Int {
         return rucksacks.windowed(3, 3) {
-            it[0].splitCorrectly()
-                .intersect(it[1].splitCorrectly().toSet())
-                .intersect(it[2].splitCorrectly().toSet())
+            it[0].splitCorrectly("")
+                .intersect(it[1].splitCorrectly("").toSet())
+                .intersect(it[2].splitCorrectly("").toSet())
                 .first()
                 .single()
                 .getPriority()
