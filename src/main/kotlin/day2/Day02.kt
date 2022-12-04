@@ -2,7 +2,7 @@ package day2
 
 import java.io.File
 fun main() {
-    val lines = File("src/main/kotlin/day2/day02.txt").readLines()
+    val lines = File("src/main/resources/day02.txt").readLines()
 
     fun formatPartOnePairs(): List<Pair<String, String>> {
         val legend = mapOf(

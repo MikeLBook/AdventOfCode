@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04Alternate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04Destructuring.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day1/Day01.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day1/Day01.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day1/day01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day1/day01Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day01Sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day2/Day02.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day2/Day02.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day2/Day02Alternate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day2/Day02Enums.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day2/day02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day2/day02Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day02Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/day3/Day03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day3/Day03.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day3/day03.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day03.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day3/day03Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day03Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/day4/Day04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day4/Day04Alternate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04Ranges.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day4/day4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day4/day4Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day4Sample.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +70,9 @@
       <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\Days" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day03Kt">
-    <configuration name="Day02AlternateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day2.Day02AlternateKt" />
-      <module name="AdventOfCode.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day02Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day2.Day02Kt" />
+  <component name="RunManager" selected="Kotlin.Day04DestructuringKt">
+    <configuration name="Day02EnumsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day2.Day02EnumsKt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,8 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day04AlternateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day4.Day04AlternateKt" />
+    <configuration name="Day04DestructuringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day4.Day04DestructuringKt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,13 +99,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day04RangesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day4.Day04RangesKt" />
+      <module name="AdventOfCode.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Day03Kt" />
-        <item itemvalue="Kotlin.Day04AlternateKt" />
+        <item itemvalue="Kotlin.Day04DestructuringKt" />
+        <item itemvalue="Kotlin.Day04RangesKt" />
         <item itemvalue="Kotlin.Day04Kt" />
-        <item itemvalue="Kotlin.Day02AlternateKt" />
-        <item itemvalue="Kotlin.Day02Kt" />
+        <item itemvalue="Kotlin.Day03Kt" />
+        <item itemvalue="Kotlin.Day02EnumsKt" />
       </list>
     </recent_temporary>
   </component>

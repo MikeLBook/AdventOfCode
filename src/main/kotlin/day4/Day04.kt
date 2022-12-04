@@ -1,3 +1,5 @@
+package day4
+
 import java.io.File
 
 fun main() {
@@ -11,7 +13,7 @@ fun main() {
                 || (list2.first() >= list1.first() && list2.first() <= list1.last())
     }
 
-    val lines = File("src/main/kotlin/day4/day4.txt").readLines()
+    val lines = File("src/main/resources/day4.txt").readLines()
 
     fun countHowMany(doOverlap: (list1: List<Int>, list2: List<Int>) -> Boolean): Int {
         // I love these shorthand methods, e.g. count as a replacement for map().size

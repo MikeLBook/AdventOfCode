@@ -10,7 +10,7 @@ fun Char.getPriority(): Int {
 }
 
 fun main() {
-    val rucksacks = File("src/main/kotlin/day3/day03.txt").readLines()
+    val rucksacks = File("src/main/resources/day03.txt").readLines()
 
     fun part1(): Int {
        return rucksacks.sumOf {

@@ -7,7 +7,7 @@ import java.io.File
     This solution is plagiarized from the Kotlin by Jetbrains channel where they do utilize ranges.
  */
 
-class Day04Alternate(input: List<String>) {
+class Day04Ranges(input: List<String>) {
     private val ranges: List<Pair<IntRange, IntRange>> = input.map { it.asRanges() }
 
     // I like setting these extension functions to be private to this class so that they don't leak out
@@ -38,7 +38,7 @@ class Day04Alternate(input: List<String>) {
 }
 
 fun main() {
-    val day4 = Day04Alternate(File("src/main/kotlin/day4/day4.txt").readLines())
+    val day4 = Day04Ranges(File("src/main/resources/day4.txt").readLines())
     println("Day 04 part 1 solution: ${day4.solvePart1()}")
     println("Day 04 part 2 solution: ${day4.solvePart2()}")
 }

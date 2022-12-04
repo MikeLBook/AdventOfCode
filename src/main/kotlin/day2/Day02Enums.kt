@@ -78,7 +78,7 @@ enum class Symbol(val points: Int) {
 }
 
 fun main() {
-    val lines = File("src/main/kotlin/day2/day02.txt").readLines()
+    val lines = File("src/main/resources/day02.txt").readLines()
     // takes either Part.ONE or Part.TWO as an argument - safer to accept a Part than a String
     fun calculate(part: Part): Int {
         return lines.sumOf { line ->
