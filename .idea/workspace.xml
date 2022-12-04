@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/day4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/day4Sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04Alternate.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/day3/Day03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day3/Day03.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day4/Day04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +59,7 @@
       <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\Days" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day04Kt">
-    <configuration name="Day01Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day1.Day01Kt" />
-      <module name="AdventOfCode.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day03Kt">
     <configuration name="Day02AlternateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day2.Day02AlternateKt" />
       <module name="AdventOfCode.main" />
@@ -89,6 +81,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day04AlternateKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day4.Day04AlternateKt" />
+      <module name="AdventOfCode.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day04Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day04Kt" />
       <module name="AdventOfCode.main" />
@@ -98,11 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Day04Kt" />
         <item itemvalue="Kotlin.Day03Kt" />
+        <item itemvalue="Kotlin.Day04AlternateKt" />
+        <item itemvalue="Kotlin.Day04Kt" />
         <item itemvalue="Kotlin.Day02AlternateKt" />
         <item itemvalue="Kotlin.Day02Kt" />
-        <item itemvalue="Kotlin.Day01Kt" />
       </list>
     </recent_temporary>
   </component>

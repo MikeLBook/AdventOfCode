@@ -1,9 +1,9 @@
 package day3
 
-import splitCorrectly
+import splitEmptyString
 import java.io.File
 
-// inspired by Maia Grotepass on the Kotlin by JetBrains channel
+// This function inspired by Maia Grotepass on the Kotlin by JetBrains channel
 // much cleaner than my manually written string List
 fun Char.getPriority(): Int {
     return if (this.isUpperCase()) this.code - 'A'.code + 27 else this.code - 'a'.code + 1
@@ -14,7 +14,7 @@ fun main() {
 
     fun part1(): Int {
        return rucksacks.sumOf {
-           val rucksackItems = it.splitCorrectly("")
+           val rucksackItems = it.splitEmptyString()
            val firstCompartment = rucksackItems.subList(0, it.length / 2)
            val secondCompartment = rucksackItems.subList(it.length / 2, it.length)
            firstCompartment.intersect(secondCompartment.toSet())
@@ -25,10 +25,11 @@ fun main() {
     }
 
     fun part2(): Int {
-        return rucksacks.windowed(3, 3) {
-            it[0].splitCorrectly("")
-                .intersect(it[1].splitCorrectly("").toSet())
-                .intersect(it[2].splitCorrectly("").toSet())
+        // instead of windowed(3, 3), can used chunked(3)
+        return rucksacks.chunked(3) {
+            it[0].splitEmptyString()
+                .intersect(it[1].splitEmptyString().toSet())
+                .intersect(it[2].splitEmptyString().toSet())
                 .first()
                 .single()
                 .getPriority()
