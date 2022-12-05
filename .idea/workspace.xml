@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day5/Day05.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day05.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day05Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day3/Day03.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day3/Day03.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day4/Day04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day4/Day04Destructuring.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04Destructuring.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day4/Day04Ranges.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day4/Day04Ranges.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day04.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day4Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day04Sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day5/Day05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day5/Day05.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/day05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day05.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +116,20 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/day5/Day05.kt</url>
+          <line>57</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="day5.Day05" memberName="stacks" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="((LinkedHashMap)((Day05)this).stacks).entrySet().toArray()[1]" custom="java.util.LinkedHashMap,day5.Day05" />
