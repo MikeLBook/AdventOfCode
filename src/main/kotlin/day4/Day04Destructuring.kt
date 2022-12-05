@@ -17,7 +17,7 @@ operator fun IntRange.contains(other: IntRange): Boolean {
     return other.first >= this.first && other.last <= this.last
 }
 
-val input = File("src/main/resources/day4.txt").readLines()
+val input = File("src/main/resources/day04.txt").readLines()
 
 fun main() {
     val ranges: List<Pair<IntRange, IntRange>> = input.map {

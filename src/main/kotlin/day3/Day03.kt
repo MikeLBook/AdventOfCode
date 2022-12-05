@@ -1,7 +1,10 @@
 package day3
 
-import splitEmptyString
 import java.io.File
+
+fun String.splitEmptyString(): List<String> {
+    return this.trim().split("").filter { item -> item.isNotEmpty() }
+}
 
 // This function inspired by Maia Grotepass on the Kotlin by JetBrains channel
 // much cleaner than my manually written string List

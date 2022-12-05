@@ -38,7 +38,7 @@ class Day04Ranges(input: List<String>) {
 }
 
 fun main() {
-    val day4 = Day04Ranges(File("src/main/resources/day4.txt").readLines())
+    val day4 = Day04Ranges(File("src/main/resources/day04.txt").readLines())
     println("Day 04 part 1 solution: ${day4.solvePart1()}")
     println("Day 04 part 2 solution: ${day4.solvePart2()}")
 }
