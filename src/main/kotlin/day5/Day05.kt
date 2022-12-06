@@ -8,54 +8,50 @@ import java.io.File
     Filtering "" after splitting "" feels so redundant but was repeatedly necessary
  */
 
-class Day05(private val lines: List<String>) {
-    private val partOneStacks = mutableMapOf<Int, MutableList<String>>()
-    private val partTwoStacks = mutableMapOf<Int, MutableList<String>>()
+enum class Part {
+    ONE, TWO
+}
 
-    fun prepareStacks() {
-        lines[lines.indexOf("") - 1]
-            .split("")
-            .filter { it != " " && it != "" }
-            .forEach {
-                partOneStacks[it.toInt()] = mutableListOf()
-                partTwoStacks[it.toInt()] = mutableListOf()
+class Day05(lines: List<String>) {
+    private val stackLines = lines.subList(0, lines.indexOf("") - 1).reversed()
+    private val stackNumbers = lines[lines.indexOf("") - 1].split("").filter { it != " " && it != "" }
+    private val instructions = lines.subList(lines.indexOf("") + 1, lines.size)
+
+
+    fun solveFor(part: Part): String {
+        val stacks = populateStacks()
+        instructions.forEach { instruction ->
+            val (howMany, from, onto) = instruction
+                .split(" ")
+                .filter { it.toIntOrNull() != null }
+                .map { it.toInt() }
+            val cratesToMove = mutableListOf<String>()
+            for (i in 1..howMany) {
+                stacks[from]?.removeLast()?.let { cratesToMove.add(it) }
             }
+            if (part == Part.ONE) stacks[onto]?.addAll(cratesToMove) else stacks[onto]?.addAll(cratesToMove.reversed())
+        }
+        return stringifyTopCrates(stacks)
     }
 
-    fun populateStacks() {
-        lines
-            .subList(0, lines.indexOf("") - 1)
-            .reversed()
-            .forEach { stackLine ->
-                val crates = stackLine.split("").filter { it != "" }
-                for (i in 1..partOneStacks.keys.size * 4 step 4) {
-                    crates.getOrNull(i)?.let {
-                        if (it != " ") {
-                            partOneStacks[(i / 4) + 1]?.add(it)
-                            partTwoStacks[(i / 4) + 1]?.add(it)
-                        }
+    private fun populateStacks(): MutableMap<Int, MutableList<String>> {
+        val stacks = mutableMapOf<Int, MutableList<String>>()
+
+        stackNumbers.forEach {
+            stacks[it.toInt()] = mutableListOf()
+        }
+
+        stackLines.forEach { stackLine ->
+            val crates = stackLine.split("").filter { it != "" }
+            for (i in 1..stacks.keys.size * 4 step 4) {
+                crates.getOrNull(i)?.let {
+                    if (it != " ") {
+                        stacks[(i / 4) + 1]?.add(it)
                     }
                 }
             }
-    }
-
-    fun partOne(): String {
-        lines
-            .subList(lines.indexOf("") + 1, lines.size)
-            .forEach { instruction ->
-                val (howMany, from, onto) = instruction
-                    .split(" ")
-                    .filter { it.toIntOrNull() != null }
-                    .map { it.toInt() }
-                for (i in 1..howMany) {
-                    partOneStacks[from]?.removeLast()?.let { partOneStacks[onto]?.add(it) }
-                }
-            }
-        return stringifyTopCrates(partOneStacks)
-    }
-
-    fun partTwo() {
-        print(partTwoStacks)
+        }
+        return stacks
     }
 
     private fun stringifyTopCrates(stackMap: Map<Int, MutableList<String>>): String {
@@ -66,12 +62,8 @@ class Day05(private val lines: List<String>) {
 }
 
 fun main() {
-    val day5 = Day05(File("src/main/resources/day05Sample.txt").readLines())
-    day5.prepareStacks()
-    day5.populateStacks()
+    val day5 = Day05(File("src/main/resources/day05.txt").readLines())
 
-
-    println("Day 05 part 1 solution: ${day5.partOne()}")
-    day5.partTwo()
-    println("Day 05 part 2 solution: ")
+    println("Day 05 part 1 solution: ${day5.solveFor(Part.ONE)}")
+    println("Day 05 part 2 solution: ${day5.solveFor(Part.TWO)}")
 }

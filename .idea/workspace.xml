@@ -7,7 +7,6 @@
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/day5/Day05.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day5/Day05.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day05.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,15 +115,6 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/day5/Day05.kt</url>
-          <line>57</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="day5.Day05" memberName="stacks" />
