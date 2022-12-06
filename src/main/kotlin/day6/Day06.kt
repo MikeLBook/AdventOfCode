@@ -9,6 +9,13 @@ class Day06(input: List<String>) {
         val marker = signal.windowed(windowSize, 1).first { it.toSet().size == windowSize }
         return signal.joinToString("").indexOf(marker.joinToString("")) + marker.size
     }
+
+    // using window to map the booleans inspired by jetbrains yt channel
+    fun alternateSolution(windowSize: Int): Int {
+        return signal.windowed(windowSize, 1) {
+            it.toSet().size == windowSize
+        }.indexOf(true) + windowSize
+    }
 }
 
 fun main() {
