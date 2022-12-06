@@ -42,9 +42,9 @@ class Day05(lines: List<String>) {
         }
 
         stackLines.forEach { stackLine ->
-            val crates = stackLine.split("").filter { it != "" }
+            val crate = stackLine.split("").filter { it != "" }
             for (i in 1..stacks.keys.size * 4 step 4) {
-                crates.getOrNull(i)?.let {
+                crate.getOrNull(i)?.let {
                     if (it != " ") {
                         stacks[(i / 4) + 1]?.add(it)
                     }
