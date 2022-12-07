@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day7/Day07.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day07.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day07Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day6/Day06.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day6/Day06.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,16 +59,9 @@
       <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\Days" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day06Kt">
+  <component name="RunManager" selected="Kotlin.Day07Kt">
     <configuration name="Day04DestructuringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day4.Day04DestructuringKt" />
-      <module name="AdventOfCode.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day04Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day04Kt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,13 +88,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day07Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day7.Day07Kt" />
+      <module name="AdventOfCode.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Day06Kt" />
+        <item itemvalue="Kotlin.Day07Kt" />
         <item itemvalue="Kotlin.Day05Kt" />
+        <item itemvalue="Kotlin.Day06Kt" />
         <item itemvalue="Kotlin.Day04DestructuringKt" />
         <item itemvalue="Kotlin.Day04RangesKt" />
-        <item itemvalue="Kotlin.Day04Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -120,10 +122,8 @@
         <PinnedItemInfo parentTag="day5.Day05" memberName="stacks" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="JetRunConfigurationType">
-        <watch expression="((LinkedHashMap)((Day05)this).stacks).entrySet().toArray()[1]" custom="java.util.LinkedHashMap,day5.Day05" />
-      </configuration>
-    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AdventOfCode$Day07Kt.ic" NAME="Day07Kt Coverage Results" MODIFIED="1670436524009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
