@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day7/Day07Alternate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day8/Day08.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day08.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day08Sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,14 +59,7 @@
       <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\Days" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day07AlternateKt">
-    <configuration name="Day04DestructuringKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day4.Day04DestructuringKt" />
-      <module name="AdventOfCode.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Day08Kt">
     <configuration name="Day05Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day5.Day05Kt" />
       <module name="AdventOfCode.main" />
@@ -93,13 +88,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day08Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day8.Day08Kt" />
+      <module name="AdventOfCode.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day08Kt" />
         <item itemvalue="Kotlin.Day07AlternateKt" />
         <item itemvalue="Kotlin.Day07Kt" />
         <item itemvalue="Kotlin.Day05Kt" />
         <item itemvalue="Kotlin.Day06Kt" />
-        <item itemvalue="Kotlin.Day04DestructuringKt" />
       </list>
     </recent_temporary>
   </component>
