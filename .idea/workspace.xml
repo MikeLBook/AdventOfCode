@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day8/Day08.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day08.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day08Sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day9/Day09.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day09.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day09Sample.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day09Sample2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,16 +60,9 @@
       <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\Days" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day08Kt">
-    <configuration name="Day05Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day5.Day05Kt" />
-      <module name="AdventOfCode.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day06Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day6.Day06Kt" />
+  <component name="RunManager" selected="Kotlin.Day09Kt">
+    <configuration name="CommKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day9.CommKt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,13 +89,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day09Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day9.Day09Kt" />
+      <module name="AdventOfCode.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day09Kt" />
+        <item itemvalue="Kotlin.CommKt" />
         <item itemvalue="Kotlin.Day08Kt" />
         <item itemvalue="Kotlin.Day07AlternateKt" />
         <item itemvalue="Kotlin.Day07Kt" />
-        <item itemvalue="Kotlin.Day05Kt" />
-        <item itemvalue="Kotlin.Day06Kt" />
       </list>
     </recent_temporary>
   </component>
