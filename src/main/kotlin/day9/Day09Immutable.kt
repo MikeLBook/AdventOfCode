@@ -3,10 +3,16 @@ package day9
 import java.io.File
 import kotlin.math.abs
 
+/*
+    Doing this one immutably was quite difficult for me.
+    While I'm happy to have pulled it off, folding this much seems like it significantly adds to the run time.
+    The mutable solution completes almost instantly.
+ */
+
 class Day09Immutable(private val lines: List<String>) {
     fun solve(knots: Int): Int {
-        val knotPositions = recordHeadPositions()
-        return List(knots - 1) { it }.fold(knotPositions) {leadingPositions, _ ->
+        val headKnotPositions = recordHeadPositions()
+        return List(knots - 1) { it }.fold(headKnotPositions) {leadingPositions, _ ->
             followLeadingKnot(leadingPositions)
         }.toSet().count()
     }

@@ -3,6 +3,12 @@ package day9
 import java.io.File
 import kotlin.math.abs
 
+/*
+    The use of x and y vars, as well as the knotPositions vars prompted me to try to solve this immutably.
+    While I pull it off in the next file, it appears to come with a significant performance cost.
+    Maybe there is another way to do this immutably and improve the runtime.
+ */
+
 class Day09(private val lines: List<String>) {
     fun solve(knots: Int): Int {
         var knotPositions = recordHeadPositions()
@@ -17,6 +23,7 @@ class Day09(private val lines: List<String>) {
         var y = 0
         return positions.map { (headX, headY) ->
             val (newX, newY) = when {
+                // it took me too long to realize that knots that aren't the head could move diagonally
                 headX isTwoAwayFrom x && headY isTwoAwayFrom y -> {
                     val xValue = if (headX > x) x + 1 else x - 1
                     val yValue = if (headY > y) y + 1 else y - 1
