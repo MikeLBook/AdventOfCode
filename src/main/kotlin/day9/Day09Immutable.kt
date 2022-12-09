@@ -17,22 +17,22 @@ class Day09Immutable(private val lines: List<String>) {
         }.toSet().count()
     }
 
-    private fun followLeadingKnot(positions: List<Pair<Int,Int>>): List<Pair<Int,Int>> {
-        return positions.fold(listOf()) { coordinates, (headX, headY) ->
-            val (x, y) = if (coordinates.isNotEmpty()) coordinates.last() else 0 to 0
+    private fun followLeadingKnot(leadingPositions: List<Pair<Int,Int>>): List<Pair<Int,Int>> {
+        return leadingPositions.fold(listOf(0 to 0)) { trailingPositions, (leadingX, leadingY) ->
+            val (x, y) = trailingPositions.last()
             val newCoordinates = when {
-                headX isTwoAwayFrom x && headY isTwoAwayFrom y -> {
-                    val xValue = if (headX > x) x + 1 else x - 1
-                    val yValue = if (headY > y) y + 1 else y - 1
+                leadingX isTwoAwayFrom x && leadingY isTwoAwayFrom y -> {
+                    val xValue = if (leadingX > x) x + 1 else x - 1
+                    val yValue = if (leadingY > y) y + 1 else y - 1
                     xValue to yValue
                 }
-                headX - x > 1 -> headX - 1 to headY
-                x - headX > 1 -> headX + 1 to headY
-                headY - y > 1 -> headX to headY - 1
-                y - headY > 1 -> headX to headY + 1
+                leadingX - x > 1 -> leadingX - 1 to leadingY
+                x - leadingX > 1 -> leadingX + 1 to leadingY
+                leadingY - y > 1 -> leadingX to leadingY - 1
+                y - leadingY > 1 -> leadingX to leadingY + 1
                 else -> x to y
             }
-            coordinates + newCoordinates
+            trailingPositions + newCoordinates
         }
     }
 
