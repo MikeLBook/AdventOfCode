@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/day9/Day09FastFauxImmutable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day9/Day09FastFauxImmutable.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/day10/Day10.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day10Sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
