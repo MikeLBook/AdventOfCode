@@ -54,18 +54,18 @@ class Day09FastFauxImmutable(private val lines: List<String>) {
     private fun followLeadingKnot(leadingPositions: List<Pair<Int,Int>>): List<Pair<Int,Int>> {
         return buildList {
             leadingPositions.forEach { (leadingX, leadingY) ->
-                val (x, y) = if (size != 0) get(size - 1) else 0 to 0
+                val (prevX, prevY) = if (size != 0) get(size - 1) else 0 to 0
                 when {
-                    leadingX isTwoAwayFrom x && leadingY isTwoAwayFrom y -> {
-                        val xValue = if (leadingX > x) x + 1 else x - 1
-                        val yValue = if (leadingY > y) y + 1 else y - 1
-                        add(xValue to yValue)
+                    leadingX isTwoAwayFrom prevX && leadingY isTwoAwayFrom prevY -> {
+                        val newX = if (leadingX > prevX) prevX + 1 else prevX - 1
+                        val newY = if (leadingY > prevY) prevY + 1 else prevY - 1
+                        add(newX to newY)
                     }
-                    leadingX - x > 1 -> add(leadingX - 1 to leadingY)
-                    x - leadingX > 1 -> add(leadingX + 1 to leadingY)
-                    leadingY - y > 1 -> add(leadingX to leadingY - 1)
-                    y - leadingY > 1 -> add(leadingX to leadingY + 1)
-                    else -> add(x to y)
+                    leadingX - prevX > 1 -> add(leadingX - 1 to leadingY)
+                    prevX - leadingX > 1 -> add(leadingX + 1 to leadingY)
+                    leadingY - prevY > 1 -> add(leadingX to leadingY - 1)
+                    prevY - leadingY > 1 -> add(leadingX to leadingY + 1)
+                    else -> add(prevX to prevY)
                 }
             }
         }
@@ -76,12 +76,12 @@ class Day09FastFauxImmutable(private val lines: List<String>) {
             lines.forEach { line ->
                 val (direction, quantity) = line.split(" ")
                 val (x, y) = if (size != 0) get(size - 1) else 0 to 0
-                for (i in 0 until quantity.toInt()) {
+                for (i in 1 .. quantity.toInt()) {
                     when(direction) {
-                        "U" -> add(x to y + 1 + i)
-                        "D" -> add(x to y - 1 - i)
-                        "L" -> add(x - 1 - i to y)
-                        "R" -> add(x + 1 + i to y)
+                        "U" -> add(x to y + i)
+                        "D" -> add(x to y - i)
+                        "L" -> add(x - i to y)
+                        "R" -> add(x + i to y)
                         else -> add(x to y)
                     }
                 }
