@@ -4,9 +4,7 @@ import java.io.File
 import kotlin.math.abs
 
 /*
-    The use of x and y vars, as well as the knotPositions vars prompted me to try to solve this immutably.
-    While I pull it off in the next file, it appears to come with a significant performance cost.
-    Maybe there is another way to do this immutably and improve the runtime.
+    Not totally happy with the use of vars and I feel like there's probably a way to do it without them.
  */
 
 class Day09(private val lines: List<String>) {

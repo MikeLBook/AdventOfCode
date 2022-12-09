@@ -4,9 +4,9 @@ import java.io.File
 import kotlin.math.abs
 
 /*
-    Doing this one immutably was quite difficult for me.
-    While I'm happy to have pulled it off, folding this much seems like it significantly adds to the run time.
-    The mutable solution completes almost instantly.
+    Doing this one immutably tool some figuring out.
+    While I'm happy to have pulled it off,
+    folding this much seems like it significantly adds to the run time.
  */
 
 class Day09Immutable(private val lines: List<String>) {
