@@ -7,6 +7,7 @@
     <list default="true" id="53b1f2d2-053f-4589-935f-f9849638ec03" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/day10/Day10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/day10/Day10.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/day10Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day10Sample.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,16 +58,9 @@
       <recent name="C:\Users\Michael\Programming\aoc\AdventOfCode\src\main\kotlin\Days" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Day09FastFauxImmutableKt">
+  <component name="RunManager" selected="Kotlin.Day10Kt">
     <configuration name="CommKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day9.CommKt" />
-      <module name="AdventOfCode.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day08Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day8.Day08Kt" />
       <module name="AdventOfCode.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,13 +87,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day10Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day10.Day10Kt" />
+      <module name="AdventOfCode.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Day10Kt" />
         <item itemvalue="Kotlin.Day09FastFauxImmutableKt" />
         <item itemvalue="Kotlin.Day09ImmutableKt" />
         <item itemvalue="Kotlin.Day09Kt" />
         <item itemvalue="Kotlin.CommKt" />
-        <item itemvalue="Kotlin.Day08Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -115,6 +116,15 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/day10/Day10.kt</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="day5.Day05" memberName="stacks" />
