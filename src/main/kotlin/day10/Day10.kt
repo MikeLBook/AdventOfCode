@@ -29,10 +29,8 @@ class Day10(private val lines: List<String>) {
         }
 
         fun getPixel(i: Int): String {
-            return when {
-                x-1 == i -> "#"
-                x == i -> "#"
-                x+1 == i -> "#"
+            return when (i) {
+                in x-1..x+1 -> "#"
                 else -> "."
             }
         }
