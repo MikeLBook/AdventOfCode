@@ -1,5 +1,6 @@
 package day05
 
+import Part
 import java.io.File
 
 /*
@@ -7,10 +8,6 @@ import java.io.File
     Still no mutable variables at least, we will see if I can complete AOC without vars.
     Filtering "" after splitting "" feels so redundant but was repeatedly necessary
  */
-
-enum class Part {
-    ONE, TWO
-}
 
 class Day05(lines: List<String>) {
     private val stackLines = lines.subList(0, lines.indexOf("") - 1).reversed()
