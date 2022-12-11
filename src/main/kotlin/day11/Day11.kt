@@ -3,34 +3,34 @@ package day11
 import Part
 import java.io.File
 
-// making the default constructor private forces usage of the static factory method for instantiation
+// Making the primary constructor private forces usage of the static factory method
 class Monkey private constructor(
-    val items: MutableList<Long> = mutableListOf(),
-    val operation: List<String> = emptyList(),
-    val divisibleBy: Int = 0,
-    val trueTarget: Int = 0,
-    val falseTarget: Int = 0,
-    var itemsInspected: Int = 0
-) {
+    private val items: MutableList<Long> = mutableListOf(),
+    private val operation: List<String> = emptyList(),
+    private val trueTarget: Int = 0,
+    private val falseTarget: Int = 0,
+    val divisibilityValue: Int = 0,
+    var itemsInspected: Long = 0
+) { // Companion objects contain what are basically static values and methods on the class
     companion object {
-        // static factory method
+        // The static factory method
         fun fromLines(lines: List<String>): Monkey {
             val items = lines[1].split(": ")[1].split(", ").map { it.toLong() }.toMutableList()
             val operation = lines[2].split("= ").last().split(" ").takeLast(2)
-            val divisibleBy = lines[3].split(" ").last().toInt()
+            val divisibilityValue = lines[3].split(" ").last().toInt()
             val trueTarget = lines[4].split(" ").last().toInt()
             val falseTarget = lines[5].split(" ").last().toInt()
-            return Monkey(items, operation, divisibleBy, trueTarget, falseTarget)
+            return Monkey(items, operation, trueTarget, falseTarget, divisibilityValue)
         }
     }
-
+    // Computed Property
     val hasItemsLeft: Boolean
         get() = (items.size > 0)
 
     fun performTurn(modulo: Int?): Pair<Long,Int> {
-        val oldValue = items.removeFirst()
-        val newValue = inspectItem(oldValue)
-        val valueWhenThrown = modulo?.let { newValue % it } ?: (newValue / 3)
+        val worryValue = inspectItem(items.removeFirst())
+        // left side of the elvis operator is the main solution to part 2
+        val valueWhenThrown = modulo?.let { worryValue % it } ?: (worryValue / 3)
         return throwItem(valueWhenThrown)
     }
 
@@ -49,7 +49,7 @@ class Monkey private constructor(
     }
 
     private fun throwItem(value: Long): Pair<Long,Int> {
-        return if (value % divisibleBy == 0.toLong()) {
+        return if (value % divisibilityValue == 0.toLong()) {
             value to trueTarget
         } else {
             value to falseTarget
@@ -63,17 +63,20 @@ class Day11(private val lines: List<String>) {
             Monkey.fromLines(lines)
         }
         val rounds = if (part == Part.ONE) 1..20 else 1..10000
-        val modulo: Int? = if (part == Part.TWO) monkeys.map { it.divisibleBy }.reduce { acc, i ->  acc * i } else null
+        // The value to modulo for the part two solution. Is null if handling part one
+        val modulo: Int? = if (part == Part.TWO) monkeys.map { it.divisibilityValue }.reduce { acc, i ->  acc * i } else null
         for (round in rounds) {
             monkeys.forEach { monkey ->
                 while (monkey.hasItemsLeft) {
-                    val move = monkey.performTurn(modulo)
-                    monkeys[move.second].catchItem(move.first)
+                    val (item, thrownTo) = monkey.performTurn(modulo)
+                    monkeys[thrownTo].catchItem(item)
                 }
             }
         }
-        val topInspections = monkeys.map { it.itemsInspected }.sorted().takeLast(2)
-        return topInspections.first().toLong() * topInspections.last().toLong()
+        return monkeys.map { it.itemsInspected }
+            .sorted()
+            .takeLast(2)
+            .reduce { acc, l -> acc * l }
     }
 }
 
