@@ -3,6 +3,10 @@ package day11
 import Part
 import java.io.File
 
+/*
+    https://en.wikipedia.org/wiki/Modular_arithmetic
+ */
+
 // Making the primary constructor private forces usage of the static factory method
 class Monkey private constructor(
     private val items: MutableList<Long> = mutableListOf(),

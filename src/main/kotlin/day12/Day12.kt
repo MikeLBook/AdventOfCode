@@ -2,6 +2,10 @@ package day12
 
 import java.io.File
 
+/*
+    https://en.wikipedia.org/wiki/Breadth-first_search
+ */
+
 class Day12(lines: List<String>) {
     private val originalHeightMap = lines.map { line ->
         line.split("").filter { it != "" }
