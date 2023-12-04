@@ -51,5 +51,5 @@ fun main() {
     val day1 = Day01()
 
     println("Day 01 part 1 solution: ${day1.part1()}")
-    println("Day 01 part 1 solution: ${day1.part2()}")
+    println("Day 01 part 2 solution: ${day1.part2()}")
 }
