@@ -1,6 +1,6 @@
 package year2022.day05
 
-import Part
+import year2022.Part
 import java.io.File
 
 /*
